@@ -1,5 +1,8 @@
-img {
-    max-width: 100%;
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
 }
 .visually-hidden {
     position: absolute;
@@ -15,4 +18,26 @@ img {
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-family: 'SFProDisplay-Regular', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $basic-text;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+// font-family: 'SFProDisplay', 'Arial', sans-serif;
+// font-family: "Barlow", "Arial", sans-serif;
+// font-family: "Staatliches", "Arial", sans-serif;

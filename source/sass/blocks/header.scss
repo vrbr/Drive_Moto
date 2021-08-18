@@ -1,43 +1,104 @@
-// burger
-// .icon-menu {
-//   display: none;
-//   @media (max-width: $mobile-width-only) {
-//       display: block;
-//       position: absolute;
-//       top: 18px;
-//       right: 10px;
-//       width: 30px;
-//       height: 18px;
-//       cursor: pointer;
-//       z-index: 5;
-//       span {
-//           transition: all .3s ease 0s;
-//           top: calc(50% - 1px);
-//           left: 0;
-//           position: absolute;
-//           width: 100%;
-//           height: 2px;
-//           background-color: #000;
-//           &:first-child {
-//               top: 0;
-//           }
-//           &:last-child {
-//               top: auto;
-//               bottom: 0;
-//           }
-//       }
-//       &._active {
-//           span {
-//               transform: scale(0);
-//               &:first-child {
-//                   transform: rotate(-45deg);
-//                   top: calc(50% - 1px);
-//               }
-//               &:last-child {
-//                   transform: rotate(45deg);
-//                   bottom: calc(50% - 1px);
-//               }
-//           }
-//       }
-//   }
-// }
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 122px;
+}
+.menu__item {
+    display: inline-block;
+}
+.menu__item + .menu__item {
+    padding-left: 50px;
+}
+.menu__link {
+    font-weight: 700;
+}
+.header__box {
+    display: flex;
+    align-items: center;
+}
+.header__address {
+    position: relative;
+    margin-right: 60px;
+    padding-left: 30px;
+    font-weight: 700;
+    width: 265px;
+}
+.header__address::before {
+    position: absolute;
+    content: "";
+    background-image: url("../../img/address-icon.svg");
+    width: 30px;
+    height: 30px;
+    top: -17px;
+    left: 0;
+}
+.user-list {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+.user-list__item {
+    padding-right: 10px;
+}
+.basket {
+    position: relative;
+}
+.basket__num {
+    position: absolute;
+    font-weight: 500;
+    font-family: 'SFProDisplay-Regular', 'Arial', sans-serif;
+    font-size: 10px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    bottom: -3px;
+    right: -13px;
+    color: #fff;
+    background-color: $basic-blue;
+    border-radius: 50%;
+    text-align: center;
+}
+.header__bottom {
+    margin-bottom: 78px;
+}
+.menu-categories {
+    min-height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $light;
+}
+.menu-categories__item {
+    position: relative;
+}
+.menu-categories__link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 17px 0 16px;
+    transform: translate(-50%, -50%);
+    transition: all .3s;
+    font-weight: 400;
+}
+.menu-categories__link::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    right: 0;
+    left: auto;
+    bottom: -4px;
+    background-color: $basic-blue;
+    transition: all .3s;
+}
+.menu-categories__link:hover {
+    color: #000;
+}
+.menu-categories__link:hover::before {
+    width: 100%;
+    right: 0;
+    left: 0;
+    right: auto;
+}
