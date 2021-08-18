@@ -17,6 +17,7 @@ html {
     overflow: hidden;
 }
 a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -37,6 +38,9 @@ body {
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+.page-section {
+    margin-bottom: 80px;
 }
 // font-family: 'SFProDisplay', 'Arial', sans-serif;
 // font-family: "Barlow", "Arial", sans-serif;
