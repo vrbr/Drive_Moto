@@ -1,0 +1,18 @@
+// Colors
+//переменные для цветов
+
+// $basic-white: #ffffff;
+// $basic-green: #68b738;
+
+// Viewports
+//устанавливаю брэкпоинты
+//чтобы использовать
+//@media (min-width: $tablet-width) {
+//     margin: 0;
+//     padding: 3px 0 0 27px;
+//     border: none;
+//   }
+
+$mobile-width-only: 767px;
+$tablet-width: 768px;
+$desktop-width: 1440px;

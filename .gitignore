@@ -1,0 +1,17 @@
+node_modules/
+build
+.css.css.map
+.DS_Store
+.idea
+.git
+.vscode
+package-lock.json
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+npm-debug.*
+Thumbs.db
+source/css/*.css
+source/css/*.map

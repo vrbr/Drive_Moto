@@ -1,0 +1,16 @@
+//чтобы использовать
+//@include list-style;
+
+@mixin list-style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+//подбираю шрифт
+
+// @mixin fonts($size: 14px, $weight: 400, $name: "Oswald") {
+//     font-family: $name, "Arial", sans-serif;
+//     font-size: $size;
+//     font-weight: $weight;
+// }
