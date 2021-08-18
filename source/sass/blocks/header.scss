@@ -69,15 +69,9 @@
     justify-content: space-around;
     background-color: $light;
 }
-.menu-categories__item {
-    position: relative;
-}
 .menu-categories__link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: relative;
     padding: 17px 0 16px;
-    transform: translate(-50%, -50%);
     transition: all .3s;
     font-weight: 400;
 }
