@@ -1,3 +1,4 @@
+//популярные
 .product-item__wrapper {
     position: relative;
     width: 271px;
@@ -57,7 +58,7 @@
     line-height: 36px;
 }
 
-.product-item__basket {
+button.product-item__basket {
     position: absolute;
     width: 60px;
     height: 40px;
@@ -214,3 +215,5 @@
 .product-slider .slick-dots .slick-active button {
     background-color: $basic-blue;
 }
+
+//с этими товарами покупают
