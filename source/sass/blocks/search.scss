@@ -1,47 +1,49 @@
-.search__tabs {
-    margin-bottom: 25px;
-}
-.search__tabs-item {
-    padding: 11px 26px 12px;
-}
-.search__tabs-item.tab--active {
-    font-family: 'SFProDisplay-Bold', 'Arial', sans-serif;
-    font-weight: 700;
-    border-radius: 5px;
-    background-color: $light;
+.search {
+    &__tabs {
+        margin-bottom: 25px;
+        &-item {
+            padding: 11px 26px 12px;
+            &.tab--active {
+                font-family: 'SFProDisplay-Bold', 'Arial', sans-serif;
+                font-weight: 700;
+                border-radius: 5px;
+                background-color: $light;
+            }
+        }
+    }
+    &__content-form {
+        display: flex;
+    }
+    &__content-input {
+        padding: 5px 20px;
+        width: 100%;
+        background: $light;
+        border-radius: 3px;
+        border: none;
+        font-size: 16px;
+        line-height: 19px;
+        &::placeholder {
+            color: $basic-gray;
+        }
+    }
+    &__content-btn {
+        margin-left: -3px;
+        padding: 17px 41px;
+        font-family: 'SFProDisplay-Bold', 'Arial', sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        background: $basic-blue;
+        border-radius: 3px;
+        border: none;
+    }
 }
 .tabs-content {
     display: none;
-}
-.tabs-content.tabs-content--active {
-    display: block;
-}
-.search__content-form {
-    display: flex;
-}
-.search__content-input {
-    padding: 5px 20px;
-    width: 100%;
-    background: $light;
-    border-radius: 3px;
-    border: none;
-    font-size: 16px;
-    line-height: 19px;
-}
-.search__content-input::placeholder {
-    color: $basic-gray;
-}
-.search__content-btn {
-    margin-left: -3px;
-    padding: 17px 41px;
-    font-family: 'SFProDisplay-Bold', 'Arial', sans-serif;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    background: $basic-blue;
-    border-radius: 3px;
-    border: none;
+    &.tabs-content--active {
+        display: block;
+    }
 }

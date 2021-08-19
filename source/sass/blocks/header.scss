@@ -1,98 +1,102 @@
-.header__top-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 122px;
+.menu {
+    &__item {
+        display: inline-block;
+        & + .menu__item {
+            padding-left: 50px;
+        }
+    }
+    &__link {
+        font-weight: 700;
+    }
+    &-categories {
+        min-height: 53px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: $light;
+        &__link {
+            position: relative;
+            padding: 17px 0 16px;
+            transition: all .3s;
+            font-weight: 400;
+            &::before {
+                position: absolute;
+                content: "";
+                width: 0;
+                height: 3px;
+                left: 0;
+                right: 0;
+                left: auto;
+                bottom: -4px;
+                background-color: $basic-blue;
+                transition: all .3s;
+            }
+            &:hover {
+                color: #000;
+                &::before {
+                    width: 100%;
+                    right: 0;
+                    left: 0;
+                    right: auto;
+                }
+            }
+        }
+    }
 }
-.menu__item {
-    display: inline-block;
-}
-.menu__item + .menu__item {
-    padding-left: 50px;
-}
-.menu__link {
-    font-weight: 700;
-}
-.header__box {
-    display: flex;
-    align-items: center;
-}
-.header__address {
-    position: relative;
-    margin-right: 60px;
-    padding-left: 30px;
-    font-weight: 700;
-    width: 265px;
-}
-.header__address::before {
-    position: absolute;
-    content: "";
-    background-image: url("../../img/address-icon.svg");
-    width: 30px;
-    height: 30px;
-    top: -17px;
-    left: 0;
+.header {
+    &__top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 122px;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+    }
+    &__address {
+        position: relative;
+        margin-right: 60px;
+        padding-left: 30px;
+        font-weight: 700;
+        width: 265px;
+        &::before {
+            position: absolute;
+            content: "";
+            background-image: url("../../img/address-icon.svg");
+            width: 30px;
+            height: 30px;
+            top: -17px;
+            left: 0;
+        }
+    }
+    &__bottom {
+        margin-bottom: 80px;
+    }
 }
 .user-list {
     margin-right: 15px;
     display: flex;
     align-items: center;
-}
-.user-list__item {
-    padding-right: 10px;
+    &__item {
+        padding-right: 10px;
+    }
 }
 .basket {
     position: relative;
-}
-.basket__num {
-    position: absolute;
-    font-weight: 500;
-    font-family: 'SFProDisplay-Regular', 'Arial', sans-serif;
-    font-size: 10px;
-    line-height: 20px;
-    width: 20px;
-    height: 20px;
-    bottom: -3px;
-    right: -13px;
-    color: #fff;
-    background-color: $basic-blue;
-    border-radius: 50%;
-    text-align: center;
-}
-.header__bottom {
-    margin-bottom: 80px;
-}
-.menu-categories {
-    min-height: 53px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: $light;
-}
-.menu-categories__link {
-    position: relative;
-    padding: 17px 0 16px;
-    transition: all .3s;
-    font-weight: 400;
-}
-.menu-categories__link::before {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 3px;
-    left: 0;
-    right: 0;
-    left: auto;
-    bottom: -4px;
-    background-color: $basic-blue;
-    transition: all .3s;
-}
-.menu-categories__link:hover {
-    color: #000;
-}
-.menu-categories__link:hover::before {
-    width: 100%;
-    right: 0;
-    left: 0;
-    right: auto;
+    &__num {
+        position: absolute;
+        font-weight: 500;
+        font-family: 'SFProDisplay-Regular', 'Arial', sans-serif;
+        font-size: 10px;
+        line-height: 20px;
+        width: 20px;
+        height: 20px;
+        bottom: -3px;
+        right: -13px;
+        color: #fff;
+        background-color: $basic-blue;
+        border-radius: 50%;
+        text-align: center;
+    }
 }
