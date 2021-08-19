@@ -1,58 +1,52 @@
-.categories__inner {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.categories__item {
-    margin-bottom: 30px;
-    border: 1px solid $border;
-    border-radius: 3px;
-    width: 370px;
-    display: flex;
-    padding: 20px 20px 16px;
-    justify-content: space-between;
-    transition: all .3s;
-}
-.categories__item:hover {
-    box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-}
-  
-.categories__item-info {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-  
-.categories__item-img {
-    text-align: center;
-    width: 50%;
-}
-  
-.categories__item-img img {
-    max-width: 100%;
-}
-  
-.categories__item-title {
-    font-weight: 700;
-    font-size: 23px;
-    line-height: 28px;
-    font-family: 'Barlow-Bold', 'Arial', sans-serif;
-    transition: all .3s;
-}
-  
-.categories__item:hover .categories__item-title {
-    color: $basic-blue;
-}
-  
-.categories__item-text {
-    font-size: 14px;
-    line-height: 17px;
-    color: $light-text;
-}
-  
-.categories__item-text::after {
-    content: url("../img/link-arrow.svg");
-    padding-left: 2px;
+.categories {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        margin-bottom: 30px;
+        border: 1px solid $border;
+        border-radius: 3px;
+        width: 370px;
+        display: flex;
+        padding: 20px 20px 16px;
+        justify-content: space-between;
+        transition: all .3s;
+        &:hover {
+            box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+            & .categories__item-title {
+                color: $basic-blue;
+            }
+        }
+        &-info {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &-img {
+            text-align: center;
+            width: 50%;
+            & img {
+                max-width: 100%;
+            }
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 23px;
+            line-height: 28px;
+            font-family: 'Barlow-Bold', 'Arial', sans-serif;
+            transition: all .3s;
+        }
+        &-text {
+            font-size: 14px;
+            line-height: 17px;
+            color: $light-text;
+            &::after {
+                content: url("../img/link-arrow.svg");
+                padding-left: 2px;
+            }
+        }
+    }
 }
