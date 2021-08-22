@@ -26,6 +26,9 @@
     &__item-drop {
         margin: 40px 0;
     }
+    &__item-btn {
+        text-align: center;
+    }
     &__item-title {
         padding-left: 26px;
         font-family: 'SFProDisplay-Semibold', 'Arial', sans-serif;
@@ -97,6 +100,57 @@
         &::placeholder {
             color: $placeholder;
         }
+    }
+    &-btn__send {
+        margin-bottom: 15px;
+        padding: 16px 85px;
+        text-transform: uppercase;
+        background: $light;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: center;
+        letter-spacing: 0.12em;
+        color: $placeholder;
+        border: none;
+        cursor: pointer;
+        &--active {
+            background-color: $basic-blue;
+            color: #fff;
+        }
+    }
+    &__extra {
+        position: relative;
+        margin-bottom: 15px;
+        display: inline-block;
+        padding-right: 29px;
+        font-size: 13px;
+        line-height: 16px;
+        &::after {
+            position: absolute;
+            content: "";
+            top: 4px;
+            right: 0;
+            background-image: url("../../img/arrow-down.svg");
+            width: 12px;
+            height: 8px;
+        }
+        &-content {
+            display: none;
+            margin-bottom: 10px;
+        }
+        &.filter__item-drop--active::after {
+            transform: rotate(180deg);
+        }
+    }
+    &-btn__reset {
+        display: inline-block;
+        background-color: transparent;
+        padding: 0;
+        border: none;
+        border-bottom: 1px solid $light-text;
+        font-size: 13px;
+        line-height: 16px;
+        color: $light-text;
     }
 }
 .jq-selectbox {
