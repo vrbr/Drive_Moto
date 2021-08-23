@@ -17,7 +17,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Barlow-SemiBold';
+    font-family: 'Barlow-SemiBold', 'Arial', sans-serif;
     src:
         url('../../fonts/Barlow-SemiBold.woff2') format('woff2'),
         url('../../fonts/Barlow-SemiBold.woff') format('woff');
@@ -26,7 +26,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Barlow-Bold';
+    font-family: 'Barlow-Bold', 'Arial', sans-serif;
     src:
         url('../../fonts/Barlow-Bold.woff2') format('woff2'),
         url('../../fonts/Barlow-Bold.woff') format('woff');
@@ -35,7 +35,7 @@
     font-display: swap;
 }
 @font-face {
-    font-family: 'Barlow-Light';
+    font-family: 'Barlow-Light', 'Arial', sans-serif;
     src:
         url('../../fonts/Barlow-Light.woff2') format('woff2'),
         url('../../fonts/Barlow-Light.woff') format('woff');

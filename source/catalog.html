@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Интернет-магазин Drive Moto</title>
 </head>
+
 <body>
 
     <header class="header">
@@ -30,7 +32,7 @@
                         <img src="img/logo.svg" alt="" class="logo__img">
                     </a>
                     <div class="header__box">
-                        <p class="header__address">Москва,  ул. Науки  25</p>
+                        <p class="header__address">Москва, ул. Науки 25</p>
                         <ul class="user-list">
                             <li class="user-list__item">
                                 <a class="user-list__link" href="#">
@@ -116,22 +118,22 @@
                     </select>
                     <button class="catalog__filter-button catalog__filter-btngrid catalog__filter-button--active">
                         <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2"/>
-                            <rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"/>
-                            <rect x="7" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"/>
-                            <rect x="14" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"/>
-                            <rect x="14" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"/>
+                            <rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2" />
+                            <rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
+                            <rect x="7" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
+                            <rect x="14" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
+                            <rect x="14" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2" />
                         </svg>
                     </button>
                     <button class="catalog__filter-button catalog__filter-btnline">
                         <svg width="25" height="21" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g opacity="1">
-                            <rect x="6" width="19" height="3" rx="1.5" fill="#2F3035"/>
-                            <rect x="6" y="8" width="19" height="3" rx="1.5" fill="#2F3035"/>
-                            <rect x="6" y="16" width="19" height="3" rx="1.5" fill="#2F3035"/>
-                            <rect width="3" height="3" rx="1.5" fill="#2F3035"/>
-                            <rect y="8" width="3" height="3" rx="1.5" fill="#2F3035"/>
-                            <rect y="16" width="3" height="3" rx="1.5" fill="#2F3035"/>
+                                <rect x="6" width="19" height="3" rx="1.5" fill="#2F3035" />
+                                <rect x="6" y="8" width="19" height="3" rx="1.5" fill="#2F3035" />
+                                <rect x="6" y="16" width="19" height="3" rx="1.5" fill="#2F3035" />
+                                <rect width="3" height="3" rx="1.5" fill="#2F3035" />
+                                <rect y="8" width="3" height="3" rx="1.5" fill="#2F3035" />
+                                <rect y="16" width="3" height="3" rx="1.5" fill="#2F3035" />
                             </g>
                         </svg>
                     </button>
@@ -141,57 +143,60 @@
                 <aside class="catalog__inner-aside aside-filter">
                     <div class="tabs-wrapper">
                         <div class="tabs aside-filter__tabs">
-                            <a class="tab aside-filter__tab tab--active" href="#"><span>Параметры</span></a>
-                            <a class="tab aside-filter__tab" href="#"><span>по марке</span></a>
+                            <a class="tab aside-filter__tab tab--active" href="#filter-1"><span>Параметры</span></a>
+                            <a class="tab aside-filter__tab" href="#filter-2"><span>по марке</span></a>
                         </div>
                         <div class="tabs-container">
-                            <div class="tabs-content aside-filter__tabs-content tabs-content--active">
+                            <div id="filter-1" class="tabs-content aside-filter__tabs-content tabs-content--active">
                                 <form class="aside-filter__form" action="#">
                                     <ul class="aside-filter__list">
                                         <li class="aside-filter__item-drop">
-                                            <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Наличие</p>
+                                            <p
+                                                class="aside-filter__item-title filter__item-drop filter__item-drop--active">
+                                                Наличие</p>
                                             <div class="aside-filter__content">
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         В наличие</label>
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         Под заказ</label>
                                                 </div>
                                             </div>
                                         </li>
                                         <li class="aside-filter__item-drop">
-                                            <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Новинки</p>
+                                            <p
+                                                class="aside-filter__item-title filter__item-drop filter__item-drop--active">
+                                                Новинки</p>
                                             <div class="aside-filter__content aside-filter__content-radio">
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" name="radio" type="radio" >
+                                                        <input class="filter-style" name="radio" type="radio">
                                                         Все</label>
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" name="radio" type="radio" >
+                                                        <input class="filter-style" name="radio" type="radio">
                                                         Новинки</label>
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" name="radio" type="radio" >
+                                                        <input class="filter-style" name="radio" type="radio">
                                                         Акции</label>
                                                 </div>
                                             </div>
                                         </li>
                                         <li class="aside-filter__item-drop">
-                                            <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Цена</p>
+                                            <p
+                                                class="aside-filter__item-title filter__item-drop filter__item-drop--active">
+                                                Цена</p>
                                             <div class="aside-filter__content">
                                                 <input type="text" class="js-range-slider" name="my_range" value=""
-                                                    data-min="100000"
-                                                    data-max="500000"
-                                                    data-from="150000"
-                                                    data-to="275000"
-                                                />
+                                                    data-min="100000" data-max="500000" data-from="150000"
+                                                    data-to="275000" />
                                             </div>
                                         </li>
                                         <li class="aside-filter__item-list">
@@ -224,11 +229,13 @@
                                             </div>
                                         </li>
                                         <li class="aside-filter__item-drop">
-                                            <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Бренд</p>
+                                            <p
+                                                class="aside-filter__item-title filter__item-drop filter__item-drop--active">
+                                                Бренд</p>
                                             <div class="aside-filter__content">
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" checked >
+                                                        <input class="filter-style" type="checkbox" checked>
                                                         BRP</label>
                                                 </div>
                                                 <div class="aside-filter__content-box">
@@ -238,7 +245,7 @@
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         Spark 3</label>
                                                 </div>
                                                 <div class="filter-more">
@@ -248,7 +255,9 @@
                                         </li>
 
                                         <li class="aside-filter__item-drop">
-                                            <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Модель</p>
+                                            <p
+                                                class="aside-filter__item-title filter__item-drop filter__item-drop--active">
+                                                Модель</p>
                                             <div class="aside-filter__content">
                                                 <input class="filter-search" type="text" placeholder="Введите модель">
                                                 <div class="aside-filter__content-box">
@@ -263,12 +272,12 @@
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         SeaDoo GTI 155</label>
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         SeaDoo GTR 230</label>
                                                 </div>
                                                 <div class="filter-more">
@@ -278,29 +287,31 @@
                                         </li>
 
                                         <li class="aside-filter__item-drop btn-checked">
-                                            <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Акции</p>
+                                            <p
+                                                class="aside-filter__item-title filter__item-drop filter__item-drop--active">
+                                                Акции</p>
                                             <div class="aside-filter__content">
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         <span class="btn-checked__text">SALE</span>
                                                     </label>
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         <span class="btn-checked__text">NEW</span>
                                                     </label>
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         <span class="btn-checked__text">HIT</span>
                                                     </label>
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         <span class="btn-checked__text">ДИЛЕР</span>
                                                     </label>
                                                 </div>
@@ -308,7 +319,9 @@
                                         </li>
 
                                         <li class="aside-filter__item-drop">
-                                            <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Страны</p>
+                                            <p
+                                                class="aside-filter__item-title filter__item-drop filter__item-drop--active">
+                                                Страны</p>
                                             <div class="aside-filter__content">
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
@@ -322,12 +335,12 @@
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         Китай</label>
                                                 </div>
                                                 <div class="aside-filter__content-box">
                                                     <label class="aside-filter__content-label">
-                                                        <input class="filter-style" type="checkbox" >
+                                                        <input class="filter-style" type="checkbox">
                                                         CША</label>
                                                 </div>
                                                 <div class="filter-more">
@@ -336,7 +349,8 @@
                                             </div>
                                         </li>
                                         <li class="aside-filter__item-drop aside-filter__item-btn">
-                                            <button class="filter-btn__send filter-btn__send--active" type="submit">ВЫБРАТЬ</button>
+                                            <button class="filter-btn__send filter-btn__send--active"
+                                                type="submit">ВЫБРАТЬ</button>
                                             <p class="filter__extra">Дополнительные параметры</p>
                                             <div class="filter__extra-content">more</div>
                                             <button class="filter-btn__reset" type="submit">Сбросить фильтр</button>
@@ -344,7 +358,7 @@
                                     </ul>
                                 </form>
                             </div>
-                            <div class="tabs-content aside-filter__tabs-content">content-2</div>
+                            <div id="filter-2" class="tabs-content aside-filter__tabs-content">content-2</div>
                         </div>
                     </div>
                 </aside>
@@ -369,7 +383,7 @@
                             <img src="img/icon-basket-white.svg" alt="basket">
                         </button>
                         <a class="product-item__notify-link" href="#"><span>Сообщить о поступлении</span></a>
-                        <a class="product-item product-item--sale" href="#">
+                        <a class="product-item product-item--sale" href="product-page.html">
                             <p class="product-item__hover-text">посмотреть товар</p>
                             <img class="product-item__img" src="img/content/gidrotsikl-2.png" alt="product">
                             <h4 class="product-item__title">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</h4>
@@ -540,12 +554,12 @@
             <div class="footer__top">
                 <div class="footer__top-inner">
                     <div class="footer__top-item footer__top-newsletter">
-                        <h6 class="footer__top-title">Подпишитесь на нашу рассылку 
+                        <h6 class="footer__top-title">Подпишитесь на нашу рассылку
                             и узнавайте о акция быстрее</h6>
-                            <form action="#" class="footer-form">
-                                <input class="footer-form__input" type="text" placeholder="Введите ваш e-mail:">
-                                <button class="footer-form__btn" type="submit">Отправить</button>
-                            </form>
+                        <form action="#" class="footer-form">
+                            <input class="footer-form__input" type="text" placeholder="Введите ваш e-mail:">
+                            <button class="footer-form__btn" type="submit">Отправить</button>
+                        </form>
                     </div>
                     <div class="footer__top-item">
                         <h6 class="footer__top-title">Информация</h6>
@@ -621,6 +635,7 @@
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
 
 <!-- <div class="tabs-wrapper">
