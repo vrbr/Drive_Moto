@@ -27,11 +27,13 @@ ul {
     list-style: none;
 }
 body {
+    min-width: 320px;
     font-family: 'SFProDisplay-Regular', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
     color: $basic-text;
+    overflow: hidden;
 }
 .container {
     max-width: 1200px;
