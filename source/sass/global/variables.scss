@@ -9,16 +9,3 @@ $basic-blue: #1C62CD;
 $light: #F0F0F4;
 $range: #E0E0E0;
 $placeholder: #BDBEC2;
-
-// Viewports
-//устанавливаю брэкпоинты
-//чтобы использовать
-//@media (min-width: $tablet-width) {
-//     margin: 0;
-//     padding: 3px 0 0 27px;
-//     border: none;
-//   }
-
-$mobile-width-only: 767px;
-$tablet-width: 768px;
-$desktop-width: 1440px;

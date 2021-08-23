@@ -56,10 +56,14 @@ $(function(){
         $('.product-item__wrapper').addClass('product-item__wrapper--list');
     });
 
-    $(".rate-yo").rateYo({
+    $('.rate-yo').rateYo({
         ratedFill: "#1C62CD",
         spacing: "7px",
         normalFill: "#C4C4C4",
         starWidth: "23px"
+    });
+
+    $('.menu__btn').on('click', function() {
+        $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
     });
 });
