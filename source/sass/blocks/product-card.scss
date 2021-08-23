@@ -66,12 +66,6 @@
             margin-left: 30px;
         }
     }
-    &__icon-favorite {
-    }
-    &__icon-comparison {
-    }
-    &__tabs {
-    }
     &__tab {
         margin-bottom: 5px;
         padding-bottom: 5px;
@@ -89,8 +83,6 @@
             line-height: 24px;
             opacity: 1;
             border-bottom: 2px solid $basic-blue;
-        }
-        &-content {
         }
     }
     &__list {
@@ -128,21 +120,5 @@
             border-radius: 3px;
             cursor: pointer;
         }
-    }
-}
-.rate {
-}
-.tabs {
-    &-wrapper {
-    }
-    &-container {
-    }
-    &-content {
-        &--active {
-        }
-    }
-}
-.tab {
-    &--active {
     }
 }
