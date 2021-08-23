@@ -1,0 +1,95 @@
+.card {
+    &__tab-box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 50px;
+        padding: 22px 0;
+        background: $light;
+    }
+    &__tabs {
+        margin-bottom: 100px;
+    }
+    &__tab {
+        font-size: 20px;
+        line-height: 24px;
+        opacity: 0.6;
+        &.tab--active {
+            opacity: 1;
+            border-bottom: 1px solid $basic-blue;
+        }
+    }
+    &__top-line {
+        margin-bottom: 10px;
+    }
+    &__label-search {
+        font-size: 17px;
+        line-height: 20px;
+        color: rgba(47, 48, 53, 0.7);
+    }
+    &__label-pickup {
+        margin-left: 54px;
+        font-size: 17px;
+        line-height: 20px;
+        color: rgba(47, 48, 53, 0.7);
+    }
+    &__input-search {
+        margin-right: 100px;
+        margin-left: 17px;
+        padding: 9px 37px 9px 17px;
+        background: $light;
+        border: none;
+        border-radius: 3px;
+    }
+    &__list {
+        &-item {
+            display: flex;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(47, 48, 53, 0.7);
+        }
+        &-itemtitle {
+            color: rgb(47, 48, 53);
+            font-size: 20px;
+            line-height: 24px;
+        }
+        &-address {
+            margin-right: 80px;
+            width: 220px;
+        }
+        &-workhours {
+            margin-right: 96px;
+            width: 157px;
+            & .workhours {
+                display: flex;
+                justify-content: space-between;
+                & + .workhours {
+                    margin-top: 9px;
+                }
+            }
+        }
+        &-avialable {
+            margin-right: 60px;
+            width: 140px;
+        }
+        &-num {
+            width: 104px;
+        }
+        &-btn {
+            margin-left: auto;
+            button {
+                padding: 9px 40px;
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                background: #1C62CD;
+                border: none;
+                border-radius: 3px;
+            }
+        }
+    }
+}
