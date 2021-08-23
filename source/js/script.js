@@ -55,4 +55,11 @@ $(function(){
         $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
         $('.product-item__wrapper').addClass('product-item__wrapper--list');
     });
+
+    $(".rate-yo").rateYo({
+        ratedFill: "#1C62CD",
+        spacing: "7px",
+        normalFill: "#C4C4C4",
+        starWidth: "23px"
+    });
 });
