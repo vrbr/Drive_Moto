@@ -16,9 +16,7 @@ $(function(){
         ]
     });
 
-    //поиск
-
-    $('.tab').on('click', function (e) {
+    $('.tab').on('click', function (e) { //поиск
         e.preventDefault();
     
         $($(this).siblings()).removeClass('tab--active');
