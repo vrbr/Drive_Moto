@@ -22,6 +22,9 @@
             line-height: 17px;
         }
     }
+    &__topdrop {
+        pointer-events: none;
+    }
     &-form {
         display: flex;
         justify-content: space-between;
